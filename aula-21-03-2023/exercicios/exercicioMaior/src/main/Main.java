@@ -8,18 +8,26 @@ public class Main {
    
     public static void main(String[] args) {
         Scanner grava = new Scanner(System.in);
-        int cont=1, maior=0, numero=0;
-        System.out.println("Digite 3 números:");
-        do {
-            System.out.print("Número " + cont + ": ");
-            numero = grava.nextInt();
-            if (numero > maior) {
-                maior = numero;
+        int numA=0, numB=0, numC=0, troca=0;
+        System.out.print("Digite o valor de A: ");
+        numA = grava.nextInt();
+        System.out.print("Digite o valor de B: ");
+        numB = grava.nextInt();
+        System.out.print("Digite o valor de C: ");
+        numC = grava.nextInt();
+        int cont = 0;
+        
+        while (cont < 5) {
+            if (numA > numB) {
+                troca = numA;
+                numA = numB;
+                numB = troca;
+            } else if (numB > numC){
+                troca = numB;
+                numC = troca;
             }
             cont++;
-        } while (cont <= 3);
-        
-        System.out.println("O maior número é: " + maior);
+        }
+        System.out.println("" + numA + " " + numB + " " + numC);
     }
-    
 }
