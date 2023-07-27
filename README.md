@@ -1,4 +1,4 @@
-# Desenvolvimento de Sistemas
+# Desenvolvimento de Sistemas - Etec Irmã Agostina
 Conteúdos e Atividades das aulas de Desenvolvimento de Sistemas da Etec Irmã Agostina
 
 ## Linguagens utilizadas
